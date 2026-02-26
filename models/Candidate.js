@@ -16,6 +16,18 @@ const candidateSchema = new mongoose.Schema({
   },
   phone: String,
   experience: String,
+  linkedinProfile: {
+    type: String,
+    default: ''
+  },
+  cvFileName: {
+    type: String,
+    default: ''
+  },
+  cvFilePath: {
+    type: String,
+    default: ''
+  },
   status: {
     type: String,
     enum: ['pending', 'taken', 'rejected'],
